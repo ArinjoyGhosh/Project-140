@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Ping Pong Ball</title>
+    <meta charset="utf-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="title.jpg" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <script src=" https://unpkg.com/ml5@latest/dist/ml5.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js" integrity="sha512-eu9vkh+EbAsW3fMmPTj/DP5W3UegIdu0Z/OABMocvoofx43MYBkcQ9hRIVxZndV1vcCYQwBg+U1PkWl04TD0Jg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="header" class="btn btn-success">
+        <span>
+            <b>AI PING PONG GAME</b>
+            <button id="instructions"class="btn btn-warning" data-bs-target="#myModal" data-bs-toggle="modal">Instructions</button>
+        </span>
+    </div>
+    <br>
+    <br>
+    <center>
+        <button id="play" class="btn btn-success"><b>Play Game</b></button>
+        <br>
+        <br>
+        <b>
+            <p>Status - </p>
+        </b>
+        <br>
+        <br>
+        <div id="canvas"></div>
+    </center>
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Instructions</h2>
+            <button class="close" data-bs-dismiss="modal">&times;</button>
+          </div>
+          <div id="modal-body">
+            <h3>1. Keep your laptop screen straight.</h3>
+            <br>
+            <h3>2. Move yourself approximately 3-4 feet away.</h3>
+            <br>
+            <h3>3. Move your right wrist in ascending and descending order, and a red dot should appear.</h3>
+            <br>
+            <h3>4. Now press the play button</h3>
+            <br>
+            <h3>5. Control the red paddel with your wrist</h3>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="btn btn-success"><b>Developed by - Arinjoy Ghosh</b></div>
+</body>
+
+</html>
